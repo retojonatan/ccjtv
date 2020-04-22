@@ -1,0 +1,171 @@
+Body{
+  height: 100vh;
+  width: 100%;
+  background: #eee;
+}
+/* LOGIN */
+#login {
+    background-image: url(/Imagenes/aleman.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+#login h3.text-info {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #0866B6;
+}
+#login   .text-info{
+    color: #0866B6 !important;
+  }
+#login h3.text-info:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #0866B6;
+    display: block;
+    margin-top: 8px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#login .container #login-row #login-column #login-box {
+    font-size: 1rem;
+    margin-top: 10vh;
+    max-width: 45vw;
+    background: rgba(200,230,255,0.9);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.31);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+#login.container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+}
+#login .btn-info:hover{
+  background-color: #08477D;
+}
+#login .btn-info {
+    background-color: #0866B6;
+    font-size: 1rem;
+    margin-top: 35px;
+}
+
+/* NAVBAR */
+#navbar nav{
+  box-shadow: 0px -5px 12px;
+}
+#navbar .img-brand{
+  margin-right: 10px;
+}
+#navbar .img-brand, .img-lang{
+  height: 60px;
+}
+#navbar .nav-link{
+  font-weight: 500;
+}
+#navbar .border-right{
+  border-color: #000 !important;
+  border-width: 2px !important;
+}
+/* NIVELES */
+#niveles .row{
+  height: 60vh;
+  padding: 0 5px;
+}
+#niveles .cuadro{
+  height: 100%;
+  background: linear-gradient(138.5deg, #138 50%, #137 50%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  box-shadow: 3px 3px 5px #999;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+#niveles .col{
+  padding: 0 5px;
+}
+#menu a:hover,
+#niveles a:hover{
+  text-decoration: none;
+}
+#niveles .cuadro:hover{
+  background: linear-gradient(138.5deg, #114095 50%, #114085 50%) !important;
+  box-shadow: 0px 0px 15px #999;
+  z-index: 2;
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(1.02);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(1.02);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(1.02);
+  transition: all 250ms ease-in;
+  transform: scale(1.02);
+}
+#niveles .icono{
+  width: 100%;
+}
+#menu .album:hover{
+  box-shadow: 0px 0px 15px #888;
+}
+#menu .album{
+  box-shadow: 1px 1px 20px #aaa;
+  height: 16vw;
+  object-fit: contain;
+  border: solid 1px #bbb;
+  background: #f5f5f5;
+}
+#menu .row li p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#menu .list-unstyled li:hover{
+  z-index: 2;
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(1.02);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(1.02);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(1.02);
+  transition: all 250ms ease-in;
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
+.card{
+  display: inline-block;
+}
+.btn-danger{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.add-btn {
+  padding: 5px 13px 5px 10px;
+  border-radius: 50px;
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: rgb(255, 255, 255)!important;
+}
+
+@media only screen and (max-width:1440px){
+  #navbar .nav-link{
+    font-size: 13px;
+  }
+}
+
+.error-logueo {
+    color: red;
+    text-align:center;
+    padding-top:10px;
+}

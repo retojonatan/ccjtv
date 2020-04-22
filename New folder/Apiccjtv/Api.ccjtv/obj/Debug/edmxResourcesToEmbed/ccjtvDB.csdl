@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ccjtvDB" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Audios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreArchivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="NombreAlbum" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Nivel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Diapositivas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreDiapositiva" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Nivel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Imagenes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreArchivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="NombreAlbum" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Nivel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Mail" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Username" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Nivel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreVideo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Nivel" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ccjtvEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Audios" EntityType="Self.Audios" />
+    <EntitySet Name="Diapositivas" EntityType="Self.Diapositivas" />
+    <EntitySet Name="Imagenes" EntityType="Self.Imagenes" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <EntitySet Name="Videos" EntityType="Self.Videos" />
+  </EntityContainer>
+</Schema>

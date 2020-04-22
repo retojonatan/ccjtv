@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ccjtvDBStoreContainer" CdmEntityContainer="ccjtvEntities">
+    <EntitySetMapping Name="Audios">
+      <EntityTypeMapping TypeName="ccjtvDB.Audios">
+        <MappingFragment StoreEntitySet="Audios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="NombreAlbum" ColumnName="NombreAlbum" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diapositivas">
+      <EntityTypeMapping TypeName="ccjtvDB.Diapositivas">
+        <MappingFragment StoreEntitySet="Diapositivas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreDiapositiva" ColumnName="NombreDiapositiva" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Imagenes">
+      <EntityTypeMapping TypeName="ccjtvDB.Imagenes">
+        <MappingFragment StoreEntitySet="Imagenes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="NombreAlbum" ColumnName="NombreAlbum" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="ccjtvDB.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Videos">
+      <EntityTypeMapping TypeName="ccjtvDB.Videos">
+        <MappingFragment StoreEntitySet="Videos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreVideo" ColumnName="NombreVideo" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
